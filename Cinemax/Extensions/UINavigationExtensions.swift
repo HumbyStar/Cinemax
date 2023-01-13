@@ -6,3 +6,26 @@
 //
 
 import Foundation
+import UIKit
+
+extension UINavigationController {
+    
+    func setAppearance() {
+        self.navigationBar.prefersLargeTitles = true
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .darkGray
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        self.navigationBar.tintColor = .yellow
+        self.navigationBar.standardAppearance = appearance
+        self.navigationBar.compactAppearance = appearance
+        self.navigationBar.scrollEdgeAppearance = appearance
+    }
+    
+    
+    
+        
+    
+}
